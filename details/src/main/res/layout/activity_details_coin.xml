@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/details_limegreen"
+    android:textAlignment="viewStart"
+    tools:context="com.example.details.details.DetailsCoin">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/details_ic_baseline_arrow_back_30"
+        android:contentDescription="@string/details_description_back_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/id_icon"
+        android:layout_width="66dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/price_day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937"
+        android:contentDescription="@string/details_description_coin_image"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_favorite"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/details_limegreen"
+        android:text="@string/details_add_favorites"
+        android:contentDescription="@string/details_description_add_remove_button"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        android:textColor="@color/details_white"
+        app:strokeColor="@color/details_white"
+        app:strokeWidth="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <TextView
+        android:id="@+id/price_day"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/cabin"
+        android:gravity="center"
+        android:textColor="@color/details_white"
+        android:textSize="28sp"
+        android:contentDescription="@string/details_description_coin_value"
+        app:layout_constraintBottom_toTopOf="@+id/button_favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_icon"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="R$30,010,20" />
+
+    <ImageView
+        android:id="@+id/favorite_star"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:backgroundTint="@color/details_white"
+        android:src="@drawable/details_ic_baseline_star_30"
+        app:layout_constraintBottom_toTopOf="@+id/id_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_coin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <TextView
+        android:id="@+id/id_coin"
+        android:layout_width="50dp"
+        android:layout_height="31dp"
+        android:gravity="center"
+        android:textColor="@color/details_white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.753"
+        tools:text="BTC" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="353dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/details_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_favorite"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/vol_traded"
+            android:layout_width="221dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="96dp"
+            android:fontFamily="@font/cabin"
+            android:gravity="center"
+            android:text="@string/details_volume"
+            android:textColor="@color/details_white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/last_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/cabin"
+            android:text="@string/details_last_hour"
+            android:textColor="@color/details_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/last_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/cabin"
+            android:text="@string/details_last_day"
+            android:textColor="@color/details_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/last_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/cabin"
+            android:text="@string/details_last_month"
+            android:textColor="@color/details_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/volume_1hrs_usd"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/cabin"
+            android:gravity="center"
+            android:textColor="@color/details_white"
+            android:textSize="20sp"
+            android:contentDescription="@string/details_description_1hr_value"
+            tools:text="24783088.66" />
+
+        <TextView
+            android:id="@+id/volume_1day_usd"
+            android:layout_width="124dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/cabin"
+            android:gravity="center"
+            android:textColor="@color/details_white"
+            android:textSize="20sp"
+            android:contentDescription="@string/details_description_day_value"
+            tools:text="24089491.25" />
+
+        <TextView
+            android:id="@+id/volume_1mth_usd"
+            android:layout_width="124dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/cabin"
+            android:gravity="center"
+            android:textColor="@color/details_white"
+            android:textSize="20sp"
+            android:contentDescription="@string/details_description_month_value"
+            tools:text="25901552984.55" />
+
+        <TextView
+            android:id="@+id/cifr2"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/cabin"
+            android:gravity="center"
+            android:text="@string/details_dollar_sign"
+            android:textColor="@color/details_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cifr3"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/cabin"
+            android:gravity="center"
+            android:text="@string/details_dollar_sign"
+            android:textColor="@color/details_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cifr4"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/cabin"
+            android:gravity="center"
+            android:text="@string/details_dollar_sign"
+            android:textColor="@color/details_white"
+            android:textSize="20sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/cifr"
+        android:layout_width="19dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/details_dollar_sign"
+        android:textColor="@color/details_white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/price_day"
+        app:layout_constraintEnd_toStartOf="@+id/price_day"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/price_day"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/back_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/cabin"
+        android:text="@string/details_back_button"
+        android:textColor="@color/details_white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/back_button"
+        app:layout_constraintEnd_toStartOf="@+id/id_coin"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

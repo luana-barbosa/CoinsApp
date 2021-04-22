@@ -1,0 +1,8 @@
+
+<resources>
+    <string name="favorites_title_digital_coin">Moeda Digital</string>
+    <string name="favorites_botao_lista_de_moedas">Botão para listar moedas</string>
+    <string name="favorites_button_coins">Moedas</string>
+    <string name="favorites_botao_moedas_favoritas">Botão para listar moedas favoritas</string>
+    <string name="favorites_button_favorite">Adicionadas</string>
+</resources>

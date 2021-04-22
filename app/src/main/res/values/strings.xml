@@ -1,0 +1,17 @@
+
+<resources>
+    <string name="app_name">BECA MOBILE 03 ANDROID - SQUAD 2</string>
+    <string name="title_digital_coin">Moeda Digital</string>
+    <string name="coins">Moedas</string>
+    <string name="favorites">Favoritos</string>
+    <string name="search_bar">Search</string>
+    <string name="botao_lista_de_moedas">Botão para listar moedas</string>
+    <string name="button_coins">Moedas</string>
+    <string name="botao_moedas_favoritas">Botão para listar moedas favoritas</string>
+    <string name="button_favorite">Adicionadas</string>
+    <string name="dollar_sign">$</string>
+    <string name="description_digital_coin">Texto moeda digital</string>
+    <string name="description_search_bar">Barra de busca</string>
+    <string name="description_coin_info">Informações das moedas</string>
+
+</resources>

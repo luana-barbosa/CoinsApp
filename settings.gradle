@@ -1,0 +1,5 @@
+include ':details'
+include ':favorites'
+include ':commons'
+include ':app'
+rootProject.name = "BECA MOBILE 03 ANDROID - SQUAD 2"

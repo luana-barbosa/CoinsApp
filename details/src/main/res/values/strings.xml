@@ -1,0 +1,17 @@
+
+<resources>
+    <string name="details_add_favorites">Adicionar</string>
+    <string name="details_volume">Volumes negociados</string>
+    <string name="details_last_hour">Última hora</string>
+    <string name="details_last_day">Último dia</string>
+    <string name="details_last_month">Último mês</string>
+    <string name="details_dollar_sign">$</string>
+    <string name="details_back_button">Voltar</string>
+    <string name="details_description_back_button">Botão de voltar</string>
+    <string name="details_description_coin_image">Imagem da moeda</string>
+    <string name="details_description_add_remove_button">Botão de adicionar/remover favorito</string>
+    <string name="details_description_coin_value">Valor da moeda</string>
+    <string name="details_description_1hr_value">Valor da ultima hora</string>
+    <string name="details_description_day_value">Valor do ultimo dia</string>
+    <string name="details_description_month_value">Valor do ultimo mês</string>
+</resources>
